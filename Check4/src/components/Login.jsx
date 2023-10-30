@@ -25,6 +25,9 @@ export default function Login() {
           alert("Login failed. Please check your E-mail or Password.");
         }
     }
+    function valueLog(event) {
+        console.log(event.target.checked)
+    }
     return (
         <>
             <form onSubmit={handleSubmit}>
@@ -34,6 +37,7 @@ export default function Login() {
                 <label htmlFor="password">Password :</label>
                 <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
                 <button type="submit">Login</button>
+                <input type="checkbox" onChange={valueLog}/>
             </form>
             <button>{<Link to="/register">Dont have an account Register here!</Link>}</button>
         </>            

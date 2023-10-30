@@ -12,7 +12,7 @@ export default function Personal(){
 
     return (
         <div>
-
+            {people.id}
         </div>
     )
 }
