@@ -7,13 +7,7 @@ import {Link, useNavigate} from 'react-router-dom'
 
 export default function Dashboard(){
 
-    const [people, setPeople] = useState('')
-
-    useEffect(() => {
-      fetch('https://jsonplaceholder.typicode.com/users/')
-      .then(res => res.json())
-      .then(data => setPeople(data))
-    } , [])
+   
 
    const [inputvalue, setInputValue] = useState("")
 
